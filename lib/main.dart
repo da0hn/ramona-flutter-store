@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:ramona_store/responsiveness_media_query.dart';
 
 void main() {
-  runApp(MaterialApp(
-    title: 'Ramona Store',
-    debugShowCheckedModeBanner: false,
-    home: Container(
-      color: Colors.blue,
+  runApp(
+    const MaterialApp(
+      title: 'Ramona Store',
+      debugShowCheckedModeBanner: false,
+      home: ResponsivenessMediaQuery(),
     ),
-  ));
+  );
 }
