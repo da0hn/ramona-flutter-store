@@ -314,4 +314,7 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
+./.idea/**
+*.iml
+
 # End of https://www.toptal.com/developers/gitignore/api/flutter,intellij+all,dart,java,swift,gradle
