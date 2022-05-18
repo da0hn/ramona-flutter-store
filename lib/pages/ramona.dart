@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ramona_store/widget/mobile_app_bar.dart';
+import 'package:ramona_store/widget/product_item.dart';
 import 'package:ramona_store/widget/web_app_bar.dart';
 
 class Ramona extends StatefulWidget {
@@ -90,8 +91,9 @@ class _RamonaState extends State<Ramona> {
   }
 
   _crossAxisCount(double width) {
-    if (width <= 600) return 2;
-    if (width <= 960) return 4;
+    if (width <= 412) return 1;
+    if (width <= 768) return 2;
+    if (width <= 1180) return 4;
     return 6;
   }
 }
