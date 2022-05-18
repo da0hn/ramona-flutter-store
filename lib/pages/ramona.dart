@@ -25,17 +25,57 @@ class _RamonaState extends State<Ramona> {
             crossAxisCount: _crossAxisCount(width),
             crossAxisSpacing: 16,
             mainAxisSpacing: 16,
-            children: [
-              Container(color: Colors.orange),
-              Container(color: Colors.blue),
-              Container(color: Colors.green),
-              Container(color: Colors.red),
-              Container(color: Colors.pink),
-              Container(color: Colors.orange),
-              Container(color: Colors.blue),
-              Container(color: Colors.green),
-              Container(color: Colors.red),
-              Container(color: Colors.pink),
+            children: const [
+              ProductItem(
+                description: 'Microondas',
+                price: 5500.00,
+                image: 'p1.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 1',
+                price: 2500.00,
+                image: 'p3.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 2',
+                price: 1500.00,
+                image: 'p4.jpg',
+              ),
+              ProductItem(
+                description: 'Pneu',
+                price: 350.00,
+                image: 'p2.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 1',
+                price: 2500.00,
+                image: 'p3.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 2',
+                price: 1500.00,
+                image: 'p4.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 3',
+                price: 1200.00,
+                image: 'p5.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 4',
+                price: 800.00,
+                image: 'p6.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 1',
+                price: 2500.00,
+                image: 'p3.jpg',
+              ),
+              ProductItem(
+                description: 'Smartphone 2',
+                price: 1500.00,
+                image: 'p4.jpg',
+              ),
             ],
           ),
         ),
