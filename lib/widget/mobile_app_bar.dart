@@ -15,10 +15,11 @@ class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
     return PreferredSize(
       preferredSize: Size(width, height),
       child: AppBar(
-        title: const Text(
+        title: Text(
           'Ramona Store',
           style: TextStyle(
             fontFamily: 'Square',
+            fontSize: _fontSize(width),
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -42,4 +43,9 @@ class MobileAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Size get preferredSize => Size(width, height);
+
+  _fontSize(double width) {
+    if (width <= 412) return 16;
+    return 24;
+  }
 }
