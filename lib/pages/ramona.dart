@@ -19,7 +19,26 @@ class _RamonaState extends State<Ramona> {
 
       return Scaffold(
         appBar: _appBar(width, appBarHeight),
-        body: Container(),
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: GridView.count(
+            crossAxisCount: _crossAxisCount(width),
+            crossAxisSpacing: 16,
+            mainAxisSpacing: 16,
+            children: [
+              Container(color: Colors.orange),
+              Container(color: Colors.blue),
+              Container(color: Colors.green),
+              Container(color: Colors.red),
+              Container(color: Colors.pink),
+              Container(color: Colors.orange),
+              Container(color: Colors.blue),
+              Container(color: Colors.green),
+              Container(color: Colors.red),
+              Container(color: Colors.pink),
+            ],
+          ),
+        ),
       );
     });
   }
@@ -28,5 +47,11 @@ class _RamonaState extends State<Ramona> {
     return width < 600
         ? MobileAppBar(width: width, height: height)
         : WebAppBar(width: width, height: height);
+  }
+
+  _crossAxisCount(double width) {
+    if (width <= 600) return 2;
+    if (width <= 960) return 4;
+    return 6;
   }
 }
